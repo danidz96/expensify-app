@@ -1,2 +1,3 @@
-# indecision-app
-My first application with react.
+# expensify-app
+
+Aplication made with react and redux
