@@ -1,4 +1,7 @@
-import * as firebase from 'firebase';
+// import * as firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+import 'firebase/storage';
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -9,7 +12,6 @@ const config = {
   messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 
-console.log(config.databaseURL);
 firebase.initializeApp(config);
 
 const database = firebase.database();
