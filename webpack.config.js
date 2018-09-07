@@ -20,7 +20,7 @@ module.exports = (env) => {
             path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
-        // mode: 'development',
+        mode: 'development',
         module: {
             rules: [{
               loader: 'babel-loader',

@@ -1,7 +1,4 @@
-// import * as firebase from 'firebase';
-import firebase from 'firebase/app';
-import 'firebase/database'; // If using Firebase database
-import 'firebase/storage';
+import * as firebase from 'firebase';
 
 const config = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -32,7 +29,7 @@ export { firebase, database as default };
 //       console.log(expenses);
 //   })
 
-// SUBSCIBE ON EXPENSES CHANGE
+// SUBSCRIBE ON EXPENSES CHANGE
 // database.ref('expenses').on('value', snapshot => {
 //     const expenses = [];
 
